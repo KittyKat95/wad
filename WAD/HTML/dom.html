@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+	
+		<title>DOM Practice</title>
+	<script >
+	function myMessage(){
+		alert("hello world");
+	}	
+	function myChangeHeading(){	
+		document.getElementaryById("heading1").innerHTML = "Changed it!"
+		}
+		
+	function callFunction(){
+		myMessage();
+		changeHeading();
+	}	
+	</script>
+	</head>
+	
+	<body onload="callFunction();">
+	<h1 id ="heading 1"> Welcome to web App Development </h1>
+		<p id="paral">
+		The Early Learning Initiative(ELI) at the National College of Ireland (NCI)
+		</p>
+		
+		<p id = "myDetails">My Details</p>
+		
+		<table>
+			<tr><td id="myName"> Blank</td></tr>
+			<tr><td id ="myAge">Blank</td></tr>
+			<tr><td id ="myAddress">Blank</td></tr>
+			<tr><td id ="myEmail">Blank</td></tr>
+			
+		</table>
+	</body>
+
+</html>

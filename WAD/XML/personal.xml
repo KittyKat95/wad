@@ -1,0 +1,110 @@
+<?xml version ="1.0" encoding= "ISO-8859-1"?>
+
+<1st>
+	<Class>
+	Software Applications for Business
+	</Class>
+	
+	<Lecturer>
+	
+	</Lecturer>
+	
+	<Lab Assistant>
+	
+	</Lab Assistant>
+	
+	<Number of Hours>
+	
+	</Number of Hours>
+</1st>
+
+<2nd>
+	<Class>
+	Web Application Development
+	</Class>
+	
+	<Lecturer>
+	
+	</Lecturer>
+	
+	<Lab Assistant>
+	
+	</Lab Assistant>
+
+	<Number of Hours>
+	
+	</Number of Hours>	
+	
+</2nd>
+
+<3rd>
+	<Class>
+	Introduction to Databases
+	</Class>
+	
+	<Lecturer>
+	
+	</Lecturer>
+	
+	<Lab Assistant>
+	
+	</Lab Assistant>
+	
+	<Number of Hours>
+	
+	</Number of Hours>
+
+	<Exam>
+
+	</Exam>	
+	
+</3rd>
+
+<4th>
+	<Class>
+	Information Technology Project Management
+	</Class>
+	
+	<Lecturer>
+	</Lecturer>
+	
+	
+	<Lab Assistant>
+	
+	</Lab Assistant>
+	
+	<Number of Hours>
+	
+	</Number of Hours>
+
+	<Exam>
+
+	</Exam>	
+	
+</4th>
+
+<5th>
+	<Class>
+	Fundamental Business Analysis
+	</Class>
+	
+	<Lecturer>
+	
+	</Lecturer>
+	
+	<Lab Assistant>
+	
+	</Lab Assistant>
+	
+	<Number of Hours>
+	
+	</Number of Hours>
+	
+	<Exam>
+
+	</Exam>	
+	
+</5th>
+
+
+

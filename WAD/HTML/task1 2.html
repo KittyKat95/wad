@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>
+			Task 1
+		</title>
+	<script type = "text/javascript">
+		function myfunction(){
+			var tmpNumber = document.getElementaryId("myNumber").value;
+			
+			if(isNaN(tmpNumber)== true){
+				document.write(tmpNumber +"is not a number");
+			}
+			else{
+				document.write(tmpNumber +"is a number");				
+			}
+		}
+			</script>
+		</head>
+	<body>
+
+	<button onclick ="()">Click to begin</button>
+	
+	<p id="message"></p>
+	
+	<form>
+
+		please enter a numeric value:
+		<input type = "text" id = "myNumber">
+		<br>
+		<input type ="button" onclick = "myFunction()" value="Submit">
+	</form>
+
+	</body>
+
+</html>

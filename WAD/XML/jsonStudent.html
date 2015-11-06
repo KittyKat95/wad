@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" dir="ltr" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	
+
+	<title>Simple JSON Demo</title>
+</head>
+
+
+<body bgcolor="#FFFFFF">
+	<h1>Student List</h1>
+	<p>This is a list of all students currently in our system</p>
+	<p id="studentList"></p>
+
+
+	<script type="text/javascript">
+	// Create the NCI JSON object
+	var nci = { "student" : [ // array of student objects
+									{ "firstName" : "Bruce", // First element
+									  "lastName" : "Wayne",
+							          "age" : 38 },
+									{ "firstName" : "Richard", // Second Element
+									  "lastName" : "Gray",
+							          "age" : 21 }
+						    ], // End "student" array.
+			    "lecturer" : [ // array of lecturer objects.
+								    { "firstName" : "Sally", // First Element
+								      "lastName" : "Green",
+									  "age" : 27 },
+								    { "firstName" : "Jim", // Second Element
+								      "lastName" : "Galley",
+								      "age" : 41 }
+							] // End "lecturer" Array.
+							
+				"clerical" : [//array of clerical objects
+								{"firstName" : "John",
+								  "lastName" : "Doe",
+								  "age" : 21 },
+								  
+								{"firstName" : "Jane",
+								 "lastName" : "Doe",
+								 "age" : 22 },  	
+								}  
+								
+							 ]			
+				   } // End Employees
+	
+	/* Function to list all students in the system */
+	function listNCIStudents() {
+		displayList = ''; // This is a string to build up a list of students to display
+		for(i in nci){ // for loop to go through all the name\value pairs in the JSON structure
+			if (i == 'student') { // if it is the student name\value 
+				for (j=0; j < nci[i].length; j++) // The student info is stored in a JSON object, we can use a for loop to iterate through it
+				{
+					// build up our display string eg. nci[i][j]["firstName"]
+					// i is the name\value pair from the first loop, j is the counter we are using to go through the student JSON object
+					displayList = displayList + nci[i][j]["firstName"] + ' ' + nci[i][j]["lastName"] + '<br>';
+				}
+			}
+		}
+		
+		// write the content of the diaplayList to an element on the page
+		document.getElementById("studentList").innerHTML  = displayList;
+	}
+	
+	// call the function to run
+	listNCIStudents();
+	
+	
+	/*Function to list all LECTUERS only*/
+	function listNCILecturers(){
+		displayList = '';
+		for(i in nci){
+			if(i = 'lecturer'){
+				for (j=0; j < nci[i].length; j++)
+				{
+				
+					displayList = displayList + nci[i][j]["firstName"] + ' ' + nci[i][j]["lastName"] + '<br>';		
+				}
+			}
+		}
+	
+	}
+	listNCILecturers();
+	
+	
+//fuction to list all clerical staff only
+	function listNCIClericalStaff(){
+		displayList = '';
+		for(i in nci){
+			if(i = 'clerical'){
+				for(j=0;  j < nci[i].length; j++)
+				{
+				displayList = displayList + nci[i][j]["firstName"] + ' ' + nci[i][j]["lastName"] + '<br>';
+				}
+			}
+		}
+	}
+	
+	</script>
+</body>
+</html>

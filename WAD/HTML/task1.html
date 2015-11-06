@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>
+			Task 1
+		</title>
+	<script type = "text/javascript">
+		function(){
+			var tmpName = document.getElementaryById("myName").value;
+			var tmpNumber = document.getElementaryById("myNumber").value;
+			
+				for(var i =0; i< tmpNumber; i++){
+					document.writeln("hi "+tmpName+"<br>");
+					}
+		}
+	</script>
+	</head>
+<body>
+
+	<button onclick ="()">Click to begin</button>
+	
+	<p id="message"></p>
+	
+	<form>
+		please enter your name:
+		<input type ="text" id="myName">
+		<br>
+
+		
+		please enter a positive number:
+		<input type = "text" id = "myNumber">
+		<br>
+		
+		<input type ="submit" onclick = "myFunction()" value="Submit">
+	</form>
+
+</body>
+
+</html>
